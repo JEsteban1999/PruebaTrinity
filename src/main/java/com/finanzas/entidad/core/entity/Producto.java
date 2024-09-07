@@ -3,7 +3,7 @@ package com.finanzas.entidad.core.entity;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -45,7 +45,7 @@ public class Producto {
 
     @ManyToOne
     @JoinColumn(name = "cliente_id", nullable = false)
-    @JsonManagedReference
+    @JsonBackReference
     private Cliente cliente;
 
     public Long getId() {
