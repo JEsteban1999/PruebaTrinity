@@ -42,6 +42,10 @@ public class Transaccion {
         return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public TipoTransaccion getTipoTransaccion() {
         return tipoTransaccion;
     }

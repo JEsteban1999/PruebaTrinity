@@ -48,8 +48,21 @@ public class Producto {
     @JsonBackReference
     private Cliente cliente;
 
+    public Producto() {
+    }
+
+    public Producto(Long id, TipoProducto tipoProducto, BigDecimal saldo) {
+        this.id = id;
+        this.tipoProducto = tipoProducto;
+        this.saldo = saldo;
+    }
+
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public TipoProducto getTipoProducto() {
@@ -115,4 +128,5 @@ public class Producto {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
+
 }

@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.finanzas.entidad.core.entity.Cliente;
 import com.finanzas.entidad.core.entity.Producto;
 import com.finanzas.entidad.core.service.ProductoService;
 

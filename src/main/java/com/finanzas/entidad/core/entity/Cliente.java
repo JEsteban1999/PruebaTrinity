@@ -55,8 +55,24 @@ public class Cliente {
     @JsonManagedReference
     private List<Producto> productos;
 
+    public Cliente() {
+    }
+
+    public Cliente(String tipoIdentificacion, String numeroIdentificacion, String nombres, String apellidos, String correo, LocalDate fechaNacimiento) {
+        this.tipoIdentificacion = tipoIdentificacion;
+        this.numeroIdentificacion = numeroIdentificacion;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.correo = correo;
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTipoIdentificacion() {
@@ -125,5 +141,9 @@ public class Cliente {
 
     public List<Producto> getProductos() {
         return productos;
+    }
+
+    public void setProductos(List<Producto> productos) {
+        this.productos = productos;
     }
 }
